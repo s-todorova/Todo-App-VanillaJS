@@ -6,9 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="flex-center">
+    
+    <div class="container">
+        <header class="header">
+            <h1 class="title">My Todos</h1>
+            <div class="info">
+                <span id="tasksLeft"class="itemsLeft">tasks left: </span>
+                <div class="filters">
+                    <button id="filterAll" class="btn-filter">All</button>
+                    <button id="filterActive" class="btn-filter">Active</button>
+                    <button id="filterCompleted" class="btn-filter">Completed</button>
+                </div>
+            </div>
+        </header>
+        <ul id="tasksList" class="tasks">
+            <!-- <li class="task">
+                <input type="checkbox" class="checkbox">
+                <span class="task-content">aaaaaaaaaa</span>
+                <button class="btn-del">X</button>
+            </li> -->
+        </ul>
+    </div>
+    <div class="add-container">
+        <div class="btn-box">
+            <!-- <button class="btn" role="button">+New Task</button> -->
+            <button id="newTask"class="btn" role="button"><span class="mobile-view">+</span><span class="text normal-view">+New Task</span></button>
+        </div>
+        <div class="input-box">
+            <input id="taskInput" hidden type="text" class="txt-input"  placeholder="Create a new todo..." id="addt"/>
+        </div>
+    </div>
+    
+    
+
     
 </body>
+
+
 </html>
